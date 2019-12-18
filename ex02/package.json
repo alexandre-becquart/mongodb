@@ -1,0 +1,13 @@
+{
+  "volta": {
+    "node": "12.13.1",
+    "yarn": "1.21.1"
+  },
+  "name": "ex02",
+  "version": "0.0.1",
+  "main": "app.js",
+  "license": "MIT",
+  "devDependencies": {
+    "mongoose": "^5.8.1"
+  }
+}

@@ -23,7 +23,7 @@ let client = new Client({
     sectors: ['test2']
 })
 
-//client.save();
+client.save();
 
 const findrecord = async () => {
     let record = await Client.find({
@@ -35,4 +35,14 @@ const findrecord = async () => {
 
 }
 
-findrecord()
+//findrecord()
+
+
+// const transformToUpper = async () => {
+//     // let record = await clients.firstname.toUpperCase()
+//     // console.log(record);
+
+//     await clients.firstname = clients.firstname.topUpperCase();
+// }
+
+// transformToUpper()

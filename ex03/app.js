@@ -14,7 +14,7 @@ Mongoose.connect('mongodb://localhost:27017/technocite', {
 /* ----------------------- lister les prix decroissant ---------------------- */
 
 // const listPrixDecr = async () => {
-//     let record = await Products.aggregate([{
+//     let record = await Products.aggregate([{ //permet de faire plusieurs filtres
 //         $sort: {
 //             price: -1
 //         }
@@ -132,6 +132,25 @@ Mongoose.connect('mongodb://localhost:27017/technocite', {
 //     record.forEach(el => console.log(el))
 // }
 
+/* -------------------------------- AVEC $and ------------------------------- */
+
+// const ppAndInf = async (priceTag) => {
+//     let record = await Products.find({
+//         $and: [{
+//                 $lt: {
+//                     stock: 3
+//                 }
+//             },
+//             {
+//                 $lt: {
+//                     price: 5
+//                 }
+//             }
+//         ]
+//     });
+//     console.log(record);
+// }
+
 // ppAndInf()
 
 /* -------------------------------------------------------------------------- */
@@ -143,10 +162,7 @@ Mongoose.connect('mongodb://localhost:27017/technocite', {
 //         $inc: {
 //             price: 0.2
 //         }
-//     }, {
-//         multi: true
-//     })
-
+//     }, 
 //     // record.forEach(el => console.log(el))
 //     console.log(record);
 // }

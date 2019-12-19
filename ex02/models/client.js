@@ -13,4 +13,16 @@ let schema = new Schema({
     sectors: [String]
 })
 
+schema.pre('save', function () { // pas de fonction arrow car 
+    this.lastname = this.lastname.toUpperCase();
+
+
+});
+
+
+
+
+
+
+
 module.exports = Mongoose.model('Client', schema)

@@ -8,7 +8,7 @@
   "main": "app.js",
   "license": "MIT",
   "devDependencies": {
-    "mongoose": "^5.8.1"
+    "mongoose": "^5.13.15"
   },
   "dependencies": {
     "@mongoosejs/double": "^0.2.0",
